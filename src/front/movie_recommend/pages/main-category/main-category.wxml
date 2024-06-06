@@ -1,0 +1,35 @@
+<van-tabs 
+	swipeable active="{{ active }}" title-active-color="orange" sticky="true"
+	bind:click="onClick" 
+>
+  <van-tab title="剧情">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+  <van-tab title="喜剧">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+  <van-tab title="动作">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+  <van-tab title="动画">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+  <van-tab title="爱情">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+  <van-tab title="犯罪">
+		<block wx:for="{{ movieInfo }}" wx:key="movie_id"> 
+			<movie-item-v3 movieType="{{ movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</block>
+	</van-tab>
+</van-tabs>

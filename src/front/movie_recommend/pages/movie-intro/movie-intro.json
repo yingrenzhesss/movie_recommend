@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "电影详情",
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-rate": "@vant/weapp/rate/index"
+  }
+}

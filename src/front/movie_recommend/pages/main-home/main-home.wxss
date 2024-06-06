@@ -1,0 +1,34 @@
+/* pages/main-home/main-home.wxss */
+page {
+	--search-background-color: #fff;
+	--search-padding: 10px 0; /* 消除搜索框默认内边距，是页面保持一致*/
+
+	box-sizing: border-box;
+	padding: 0 24rpx;
+	background-color: #fafafa;
+	/* 找到变量名改样式 */
+}
+.van-search__content {
+  border: 1px solid #999; /* 设置边框样式 */
+  border-radius: 4px; /* 设置边框圆角 */
+}
+.banner { 
+	border-radius: 12rpx;
+	overflow: hidden;
+}
+.banner-image {
+	width: 100%;
+}
+
+/* 为你推荐 */
+
+.push_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10rpx;
+	margin-bottom: 40rpx;
+}
+.push_list .push_item {
+	width: 49%;
+}

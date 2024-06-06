@@ -1,0 +1,19 @@
+<!--pages/main-profile/main-profile.wxml-->
+<!-- 1.用户登录 -->
+<view class="section userinfo" bindtap="onUserInfoTap">
+	<image class="avatar" src="{{ isLogin ? userInfo.user_avatar: '/assets/images/profile/avatar_placeholder.png' }}"></image>
+	<view class="nickname">{{ isLogin ? userInfo.user_name: '未登录' }}</view>
+</view>
+
+<!-- 2.tabs选项 -->
+<view class="section tabs">
+	<block wx:for="{{ tabs }}" wx:key="name">
+		<view class="item" bindtap="onTabItemTap" data-item="{{ item }}">
+			<image class="icon" src="/assets/images/profile/{{ item.type }}.png" />
+			<view class="name">{{ item.name }}</view>
+		</view>
+	</block>
+</view>
+
+<!-- 3.跳转管理员 -->
+<button class="systemRole section" bindtap="onSystemTap">管理员登录</button>

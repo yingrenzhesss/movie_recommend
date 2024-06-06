@@ -1,0 +1,18 @@
+<!--pages/sys-detail/sys-detail.wxml-->
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="用户管理">
+		<sys-detail-user></sys-detail-user>
+	</van-tab>
+  <van-tab title="电影管理">
+		<sys-detail-movie></sys-detail-movie>
+	</van-tab>
+  <van-tab title="评论管理">
+		<sys-detail-comment></sys-detail-comment>
+	</van-tab>
+  <van-tab title="轮播图">
+		<sys-detail-banners></sys-detail-banners>
+	</van-tab>
+  <van-tab title="个人中心">
+		<sys-detail-profile></sys-detail-profile>
+	</van-tab>
+</van-tabs>

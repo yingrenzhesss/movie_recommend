@@ -1,0 +1,20 @@
+/* components/menu-area/menu-area.wxss */
+.menu {
+	height: 660rpx;
+}
+/* 热映类型样式 */
+.list {
+	display: flex;
+	height: 660rpx;
+	margin-left: -24rpx;
+	/* white-space: nowrap; */
+}
+.list .item {
+	flex-shrink: 0;
+	width: 340rpx;
+	height: 450rpx;
+	margin-left: 24rpx;
+}
+.list .item:last-of-type {
+	padding-right: 20rpx;
+}

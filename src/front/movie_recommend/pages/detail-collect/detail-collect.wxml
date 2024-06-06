@@ -1,0 +1,8 @@
+<!--pages/detail-collect/detail-collect.wxml-->
+<scroll-view class="list" scroll-y enable-flex>
+	<block wx:for="{{ movieInfo }}" wx:key="index">
+		<view class="item">
+			<movie-item-v3 movieType="{{ item.movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</view>
+	</block>
+</scroll-view>

@@ -1,0 +1,19 @@
+<!--components/movie-item-v3/movie-item-v3.wxml-->
+<view class="movie-item" bindtap="onMovieItemTap">
+	<image class="image" src="{{ itemData.cover_url }}" />
+	<view class="content">
+		<view class="name">{{ itemData.title }}</view>
+		<view class="movie-score">评分:
+			<text class="score">{{ itemData.score }}</text>
+		</view>
+		<view class="movie-director">导演:
+			<text class="director">{{ itemData.director }}</text>
+		</view>
+		<view class="movie-actors">主演:
+			<text class="actors">{{ itemData.actors }}</text>
+		</view>
+		<view class="movie-type">类型:
+			<text class="movieType">{{ movieType }}</text>
+		</view>
+	</view>
+</view>

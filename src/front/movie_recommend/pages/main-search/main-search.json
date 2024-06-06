@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "视频搜索",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "movie-item-v3": "/components/movie-item-v3/movie-item-v3"
+  }
+}

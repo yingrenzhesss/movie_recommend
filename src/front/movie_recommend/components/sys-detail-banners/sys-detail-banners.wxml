@@ -1,0 +1,18 @@
+<!--components/sys-detail-banners/sys-detail-banners.wxml-->
+<view class="banners-item">
+	<block wx:for="{{ bannersInfo }}" wx:key="id">
+		<view class="container">
+			<view class="banners">ID: {{ item.id }}</view>
+			<view class="movie_id">电影id：{{ item.movie_id }}</view>
+			<view class="movie_name">电影名字：{{ item.movie_name }}</view>
+			<view class="movie_img">电影封面：{{ item.movie_img }}</view>
+			<view class="operation">
+				<button class="operation-button" size="mini" type="warn" plain bindtap="onInsertTap"
+				>增加</button>
+				<button class="operation-button" size="mini" type="warn" plain bindtap="onDelectTap"
+					data-movie_id="{{ item.movie_id }}" data-movie_name="{{ item.movie_name }}"
+				>删除</button>
+			</view>
+		</view>
+	</block>
+</view>

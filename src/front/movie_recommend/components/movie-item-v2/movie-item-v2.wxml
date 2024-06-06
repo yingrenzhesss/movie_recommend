@@ -1,0 +1,14 @@
+<!--components/movie-item-v2/movie-item-v2.wxml-->
+<view class="item" bindtap="onMovieItemTap"> 
+	<view class="index">{{ index }}</view>
+	<view class="cover-container">
+		<image class="image" src="{{ itemData.cover_url }}" />
+	</view>
+	<view class="info">
+		<view>{{ itemData.title }}</view>
+		<view class="source">
+			<!-- <image class="icon" src="/assets/images/icons/movie_icon.png"></image> -->
+			<text>{{ itemData.director }}</text>
+		</view>
+	</view>
+</view>

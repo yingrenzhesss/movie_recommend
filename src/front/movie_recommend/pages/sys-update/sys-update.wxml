@@ -1,0 +1,140 @@
+<view class="movie" wx:if="{{ type === 'movie' }}">
+  <van-cell-group>
+    <van-field
+      value="{{ movieInfo.movie_id }}"
+      type="text"
+      clearable
+      label="ID"
+      bind:change="onIdChange"
+    />
+    <van-field
+      value="{{ movieInfo.title }}"
+      type="text"
+      clearable
+      label="名字"
+      bind:change="onTitleChange"
+    />
+    <van-field
+      value="{{ movieInfo.score }}"
+      type="text"
+      clearable
+      label="评分"
+      bind:change="onScoreChange"
+    />
+    <van-field
+      value="{{ movieInfo.duration }}"
+      type="text"
+      clearable
+      label="时长"
+      bind:change="onDurationChange"
+    />
+    <van-field
+      value="{{ movieInfo.director }}"
+      type="text"
+      clearable
+      label="导演"
+      bind:change="onDirectorChange"
+    />
+    <van-field
+      value="{{ movieInfo.types }}"
+      type="text"
+      clearable
+      label="类型"
+      bind:change="onTypesChange"
+    />
+    <van-field
+      value="{{ movieInfo.region }}" 
+      type="text"
+      clearable
+      label="地区"
+      bind:change="onRegionChange"
+    />
+    <van-field
+      value="{{ movieInfo.description }}"
+      type="textarea"
+      clearable
+      autosize
+      label="描述"
+      bind:change="onDescriptionChange"
+    />
+  </van-cell-group>
+  <view class="operation">
+    <button class="section" type="primary" bindtap="onSubmit">提交修改</button>
+  </view>
+</view>
+<view class="system_role" wx:if="{{ type === 'system_role' }}">
+  <van-cell-group>
+    <van-field
+      value="{{ systemRole.id }}"
+      type="text"
+      clearable
+      disabled
+      label="管理员ID"
+    />
+    <van-field
+      value="{{ systemRole.user_name }}"
+      type="text"
+      clearable
+      label="名字"
+      bind:change="onSysNameChange"
+    />
+    <van-field
+      value="{{ systemRole.status }}"
+      type="text"
+      clearable
+      label="状态"
+      bind:change="onStatusChange"
+    />
+    <van-field
+      value="{{ systemRole.user_role }}"
+      type="text"
+      clearable
+      label="身份"
+      bind:change="onRoleChange"
+    />
+    <van-field
+      value="{{ systemRole.user_avatar }}"
+      type="text"
+      clearable
+      label="头像"
+      bind:change="onAvatarChange"
+    />
+  </van-cell-group>
+  <view class="operation">
+    <button class="section" type="primary" bindtap="onSysSubmit">提交修改</button>
+  </view>
+</view>
+<view class="system_role" wx:if="{{ type === 'system_secret' }}">
+  <van-cell-group>
+    <van-field
+      value="{{ value }}"
+      type="password"
+      label="原密码"
+      placeholder="请输入原密码"
+      clearable
+      required
+      bind:change="onOldSecretChange"
+    />
+    <van-field
+      value="{{ value }}"
+      type="password"
+      placeholder="请输入新密码"
+      clearable
+      required
+      label="新密码"
+      bind:change="onNewSecretChange"
+    />
+    <van-field
+      value="{{ value }}"
+      type="password"
+      placeholder="请再次输入新密码"
+      clearable
+      required
+      label="确认密码"
+      bind:change="onConfireSecretChange"
+    />
+  </van-cell-group>
+  <view class="operation">
+    <button class="section" type="primary" bindtap="onSysSecretSubmit">提交修改</button>
+  </view>
+</view>

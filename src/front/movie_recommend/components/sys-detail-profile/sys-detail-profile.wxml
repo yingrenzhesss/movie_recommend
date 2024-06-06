@@ -1,0 +1,20 @@
+<!--components/sys-detail-profile/sys-detail-profile.wxml-->
+<view class="user-profile">
+	<view class="container ">
+		<view class="userinfo">
+			<image class="avatar" src="{{ user_avatar }}" />
+			<view class="nickname">{{ user_name }}</view>
+		</view>
+		<view class="operation">
+			<button 
+				class="operation-button" size="mini" type="warn" plain bindtap="onUpdateTap"
+			>资料管理</button>
+			<button 
+				class="operation-button" size="mini" type="warn" plain bindtap="onUpdateSecretTap"
+			>修改密码</button>
+			<button 
+				class="operation-button" size="mini" type="warn" plain bindtap="onQuitTap"
+			>退出登录</button>
+		</view>
+	</view>
+</view>

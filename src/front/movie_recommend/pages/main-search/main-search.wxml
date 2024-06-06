@@ -1,0 +1,21 @@
+<van-search
+  value="{{ value }}"
+	shape="round"
+  background="#fafafa"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+	bind:clear="onClear"
+>
+  <view class="search-button" slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<!-- 搜索内容 -->
+<scroll-view class="list" scroll-y enable-flex>
+	<block wx:for="{{ movieInfo }}" wx:key="movie_id">
+		<view class="item">
+			<movie-item-v3 movieType="{{ item.movieType }}" itemData="{{ item }}"></movie-item-v3>
+		</view>
+	</block>
+</scroll-view>

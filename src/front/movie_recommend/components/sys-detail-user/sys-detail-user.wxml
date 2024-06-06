@@ -1,0 +1,24 @@
+<!--components/sys-detail-user/sys-detail-user.wxml-->
+<view>
+	<van-search value="{{ value }}"shape="round"background="#fafafa"placeholder="请输入搜索关键词"use-action-slot
+		bind:change="onChange"
+		bind:search="onSearch"
+		bind:clear="onClear"
+	>
+		<view slot="action" bind:tap="onClick">搜索</view>
+	</van-search>
+	<view class="user-item">
+		<block wx:for="{{ userInfo }}" wx:key="id">
+			<view class="container">
+				<view class="user_id">用户ID: {{ item.id }}</view>
+				<view class="name">用户名：{{ item.user_name }}</view>
+				<view class="role">用户角色：{{ item.user_role }}</view>
+				<view class="operation">
+					<button class="operation-button" size="mini" type="warn" plain bindtap="onDelectTap"
+						data-id="{{ item.id }}" data-name="{{ item.user_name }}"
+					>删除</button>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

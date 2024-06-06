@@ -1,0 +1,21 @@
+<!--pages/system-register/system-register.wxml-->
+<view class="container">
+  <view class="login">
+    <view class="title">欢迎注册</view>
+    <view class="login-name">
+      <image class="image" src="/assets/images/icons/system.png" />
+      <view class="name-input">
+        <input placeholder="请输入用户名" type="text" bindinput="onUsernameInput"/>
+      </view>
+    </view>
+    <view class="login-password">
+      <image class="image" src="/assets/images/icons/password.png" mode=""/>
+      <view class="password-input">
+        <input placeholder="请输入密码" type="password" bindinput="onPasswordInput"/>
+      </view>
+    </view>
+		<view class="operation">
+			<button  bindtap="onRegisterClick">注册</button>
+		</view>
+  </view>
+</view>

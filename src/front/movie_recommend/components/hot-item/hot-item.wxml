@@ -1,0 +1,13 @@
+<!--components/hot-item/hot-item.wxml-->
+<view class="hot-item" bindtap="onHotItemTap">
+	<view class="top">
+		<view class="image-container">
+			<image class="image" src="{{ itemData.cover_url }}" mode="aspectFill"/>
+		</view>
+		<view class="score">{{ itemData.score }}</view>
+	</view>
+	<view class="bottom">
+		<view class="title">{{ itemData.title }}</view>
+		<view class="actors">{{ itemData.actors }}</view>
+	</view>
+</view>

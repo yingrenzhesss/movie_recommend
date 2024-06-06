@@ -1,0 +1,38 @@
+/* components/sys-detail-banners/sys-detail-banners.wxss */
+.banners-item {
+	padding: 20rpx;
+}
+.container {
+  position: relative;
+  padding: 20rpx;
+  border: 4rpx solid rgb(78, 77, 77);
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+	flex-direction: column;
+	font-size: 32rpx;
+}
+
+.banners {
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.movie_id {
+	margin-bottom: 20rpx;
+}
+
+.movie_name {
+	margin-bottom: 20rpx;
+}
+.movie_img {
+	margin-bottom: 20rpx;
+	overflow: hidden;
+}
+.operation {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 40rpx;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,34 @@
+/* components/sys-detail-user/sys-detail-user.wxss */
+.user-item {
+	padding: 20rpx;
+}
+.container {
+  position: relative;
+  padding: 20rpx;
+  border: 4rpx solid rgb(78, 77, 77);
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+	flex-direction: column;
+	font-size: 32rpx;
+}
+
+.user_id {
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.name {
+	margin-bottom: 20rpx;
+}
+
+.role {
+	margin-bottom: 20rpx;
+}
+.operation {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 40rpx;
+	justify-content: center;
+	align-items: center;
+}

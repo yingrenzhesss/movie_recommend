@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "视频分类",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "movie-item-v3": "/components/movie-item-v3/movie-item-v3"
+  }
+}

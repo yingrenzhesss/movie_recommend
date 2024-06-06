@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "管理后台",
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-search": "@vant/weapp/search/index",
+    "sys-detail-user": "/components/sys-detail-user/sys-detail-user",
+    "sys-detail-movie": "/components/sys-detail-movie/sys-detail-movie",
+    "sys-detail-banners": "/components/sys-detail-banners/sys-detail-banners",
+    "sys-detail-profile": "/components/sys-detail-profile/sys-detail-profile",
+    "sys-detail-comment": "/components/sys-detail-comment/sys-detail-comment"
+  }
+}

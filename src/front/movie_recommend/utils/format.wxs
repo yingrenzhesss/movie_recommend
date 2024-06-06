@@ -1,0 +1,37 @@
+
+// 2.练习1：格式化数字
+function formatCount(count) {
+  var numCount = parseInt(count)
+  if (numCount >= 100000000){
+    return (numCount / 100000000).toFixed(1) + "亿"
+  }else if(numCount >= 10000){
+    return (numCount / 10000).toFixed(1) + "万"
+  }else {
+    return numCount
+  }
+}
+
+// 3.练习2 格式化时间
+function padLeft(time) {
+  time = time + ""
+  return ("00" + time).slice(time.length)
+}
+
+
+function formatTime(time) {
+	// 将毫秒转成秒
+	time = time / 1000
+
+  minute = Math.floor(time / 60)
+  second = Math.floor(time) % 60
+  return padLeft(minute) + ":" + padLeft(second)
+}
+
+
+
+// 必须导出后才能被调用，必须使用comonJS方法导出
+module.exports= {
+  formatCount: formatCount,
+  formatTime : formatTime
+}
+

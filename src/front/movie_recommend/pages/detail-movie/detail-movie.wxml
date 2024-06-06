@@ -1,0 +1,9 @@
+<!--pages/detail-movie/detail-movie.wxml-->
+<view class="movie-list">
+	<block wx:for="{{ movieInfo }}" wx:key="movie_id">
+		<movie-item-v2 
+			movieType="为你推荐" itemData="{{ item }}" index="{{ index + 1 }}" 
+		>
+		</movie-item-v2>
+	</block>
+</view>

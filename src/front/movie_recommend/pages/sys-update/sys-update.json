@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "后台资料修改",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

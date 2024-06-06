@@ -1,0 +1,45 @@
+/* components/movie-item-v3/movie-item-v3.wxss */
+.movie-item {
+	height: 240rpx;
+	display: flex;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 20rpx;
+}
+.image {
+  width: 180rpx;
+  height: 100%;
+  margin-right: 20rpx;
+  border-radius: 16rpx;
+}
+.content {
+	font-size: 24rpx;
+	flex: 1;
+  padding-right: 2rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .name {
+	color: #666;
+  font-size: 36rpx;
+	font-weight: bolder;
+	margin-bottom: 10rpx;
+}
+
+.content .score {
+  color: #faaf00;
+}
+.movie-score,
+.movie-director,
+.movie-actors,
+.movie-type {
+  color: #bfbfbf;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .movieType {
+  color: #bfbfbf;
+  font-size: 30rpx;
+}

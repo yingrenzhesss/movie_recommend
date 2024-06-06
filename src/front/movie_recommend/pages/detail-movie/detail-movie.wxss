@@ -1,0 +1,5 @@
+/* pages/detail-movie/detail-movie.wxss */
+.movie-list {
+	padding: 10rpx;
+	padding-top: 0;
+}

@@ -1,0 +1,83 @@
+<!--pages/movie-intro/movie-intro.wxml-->
+<view class="content">
+  <!-- 背景 -->
+  <image class="bg-image" mode="aspectFill" src="{{ movieInfo.cover_url }}"></image>
+  <view class="bg-cover"></view>
+	<!-- 内容 -->
+	<view class="album">
+		<image class="image" src="{{ movieInfo.cover_url }}"></image>
+		<view class="info">
+			<view class="title">{{ movieInfo.title }}</view>
+			<view class="director">导演：{{ movieInfo.director }}</view>
+			<view class="score">{{ movieInfo.score }}</view>
+			<view class="duration">{{ movieInfo.duration }}</view>
+			<view class="release_region">
+				<view class="release_date">{{ movieInfo.release_date }} </view>
+				<view class="region">{{ movieInfo.region }}</view>
+			</view>
+			<view class="types">{{ movieInfo.types }}</view>
+		</view>
+	</view>
+</view>
+<van-tabs active="{{ active }}" bind:click="onClick">
+  <van-tab title="简介">
+		<view class="one">
+			<view class="description">
+				<view class="set">剧情简介</view>
+				<view class="desc" wx:if="{{ !isExpanded }}">
+					简介: {{ movieInfo.description }}
+				</view>
+				<view class="desc-expanded" wx:else>{{ movieInfo.description }}</view>
+				<view class="expand-link" bindtap="expandText" wx:if="{{ !isExpanded }}">
+					展开
+				</view>
+			</view>
+			<view class="actors">
+				<view class="actors-set">演员列表</view>
+				<scroll-view 
+					class="actors-list" scroll-x enable-flex
+					style="width: {{ screenWidth }}px;"
+				> 
+					<block  wx:for="{{ actors }}" wx:key="index">
+						<view class="actor-item">
+							<view class="item">
+								<view class="top">
+									<image class="actor-avatar" src="{{ item.actor_avatar }}" />
+								</view>
+								<view class="bottom">
+									<view class="actor-name">{{ item.actor_name }}</view>
+								</view>
+							</view>
+						</view>
+					</block>
+				</scroll-view>
+			</view>
+		</view>
+		<view class="others">
+			<button class="collect" type="btn" size="mini" bindtap="onCollectTap">
+				<image class="star" src="{{ isCollect? '/assets/images/icons/collect_active.png': '/assets/images/icons/collect.png' }}"></image>
+				收藏
+			</button>
+			<button class="comment" type="btn" size="mini" bindtap="onCommentTap">
+				<image class="pencil" src="/assets/images/icons/pencil.png" />
+				写评价
+			</button>
+		</view>
+	</van-tab>
+  <van-tab title="短评">
+		<view wx:if="{{ movieComment.length }}">
+			<block wx:for="{{ movieComment }}" wx:key="index">
+					<view class="comment-item" wx:if="{{ movieComment.length }}">
+						<view class="comment-user">用户: {{ item.user_name }}</view>
+						<view class="comment-score">评分：
+							<van-rate value="{{ item.rating }}" size="{{ 20 }}" color="#ffd21e" void-icon="star" void-color="#eee"/>
+							<view class="comment-content">内容：{{ item.content }}</view>
+						</view>
+					</view>
+					<view wx:else>暂无评论~</view>
+			</block>
+		</view>
+		<view class="noComment" wx:else>暂无评论~</view>
+	</van-tab>
+</van-tabs>
+

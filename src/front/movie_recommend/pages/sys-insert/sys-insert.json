@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "后台内容增加",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

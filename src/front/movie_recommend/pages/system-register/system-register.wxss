@@ -1,0 +1,61 @@
+/* pages/system-register/system-register.wxss */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100vh;
+	background-color: skyblue;
+}
+
+.login {
+	width: 600rpx;
+	height: 500rpx;
+  padding: 20px;
+  border: 1px solid #ccc;
+	border-radius: 16rpx;
+	background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 46rpx;
+	font-weight: bold;
+	margin-top: 20rpx;
+	margin-bottom: 30rpx;
+	border-bottom: 1px solid #5279ED;
+	padding: 10rpx;
+}
+
+.login-name,
+.login-password {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.name-input,
+.password-input {
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 按钮 */
+.operation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 60rpx;
+}

@@ -1,0 +1,28 @@
+<!--components/sys-detail-comment/sys-detail-comment.wxml-->
+<view>
+	<van-search value="{{ value }}"shape="round"background="#fafafa"placeholder="请输入搜索关键词"use-action-slot
+		bind:change="onChange"
+		bind:search="onSearch"
+		bind:clear="onClear"
+	>
+		<view slot="action" bind:tap="onClick">搜索</view>
+	</van-search>
+	<view class="comment-item">
+		<block wx:for="{{ commentInfo }}" wx:key="id">
+			<view class="container">
+				<view class="name">用户名：{{ item.user_name }}</view>
+				<view class="movie_id">电影ID：{{ item.movie_id }}</view>
+				<view class="movie_name">电影名字：{{ item.movie_name }}</view>
+				<view class="rating">用户评分：
+					<text class="score">{{ item.rating }}</text>
+				</view>
+				<view class="content">评论内容：{{ item.content }}</view>
+				<view class="operation">
+					<button class="operation-button" size="mini" type="warn" plain bindtap="onDelectTap"
+						data-id="{{ item.id }}" data-name="{{ item.user_name }}" data-movie_id="{{ item.movie_id }}"
+					>删除</button>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

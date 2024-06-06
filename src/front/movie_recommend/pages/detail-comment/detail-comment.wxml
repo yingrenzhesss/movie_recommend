@@ -1,0 +1,8 @@
+<!--pages/detail-comment/detail-comment.wxml-->
+<view class="list">
+	<block wx:for="{{ userComment }}" wx:key="create_at">
+		<view class="item">
+			<user-comment itemData="{{ item }}" bind:deleteClick= "onDelete" ></user-comment>
+		</view>
+	</block>	
+</view>

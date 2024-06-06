@@ -1,0 +1,11 @@
+
+.operation {
+	padding: 80rpx;
+	margin-top: 10rpx;
+	margin-bottom: 30rpx;
+}
+.section {
+	padding: 20rpx;
+	background-color: rgb(13, 149, 240);
+	border-radius: 10rpx;
+}

@@ -1,0 +1,44 @@
+/* components/sys-detail-comment/sys-detail-comment.wxss */
+.comment-item {
+	padding: 20rpx;
+}
+.container {
+  position: relative;
+  padding: 20rpx;
+  border: 4rpx solid rgb(78, 77, 77);
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+	flex-direction: column;
+	font-size: 32rpx;
+}
+.name {
+	font-weight: bold;
+	margin-bottom: 20rpx;
+}
+
+.movie_id {
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.movie_name {
+	margin-bottom: 20rpx;
+}
+.rating {
+	margin-bottom: 20rpx;
+}
+.rating .score {
+	color: rgb(243, 83, 9);
+	font-size: 36rpx;
+}
+.content {
+	margin-bottom: 20rpx;
+}
+.operation {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 40rpx;
+	justify-content: center;
+	align-items: center;
+}

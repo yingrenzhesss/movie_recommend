@@ -1,0 +1,15 @@
+<!--components/menu-area/menu-area.wxml-->
+<!-- 电影区域组件 -->
+<view class="menu" wx:if="{{ menuList.length }}">
+	<area-header title="{{ title }}" bind:moreClick="onMenuMoreClick"></area-header>
+	<scroll-view 
+		class="list" scroll-x enable-flex 
+		style="width: {{ screenWidth }}px;"
+	>
+		<block wx:for="{{ menuList }}" wx:key="movie_id">
+			<view class="item">
+				<hot-item movieType="{{ title }}" title="{{ title }}" itemData="{{ item }}"></hot-item>
+			</view>
+		</block>
+	</scroll-view>
+</view>

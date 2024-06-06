@@ -1,0 +1,53 @@
+/* pages/main-profile/main-profile.wxss */
+page {
+	box-sizing: border-box;
+	padding: 30rpx;
+	background-color: #f3f3f3;
+}
+
+/* 登录 */
+.section {
+	padding: 30rpx;
+	background-color: #fff;
+	border-radius: 10rpx;
+}
+
+.userinfo {
+	display: flex;
+	align-items: center;
+}
+.userinfo .avatar {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 50%;
+}
+.userinfo .nickname {
+	margin-left: 20rpx;
+	font-size: 30rpx;
+}
+
+/* tabs */
+.tabs {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30rpx;
+}
+.tabs .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tabs .item .icon {
+	width: 70rpx;
+	height: 70rpx;
+}
+.tabs .item .name {
+	margin-top: 20rpx;
+	font-size: 24rpx;
+}
+
+/* 管理员 */
+.systemRole {
+	margin-top: 30rpx;
+	padding: 10rpx;
+}

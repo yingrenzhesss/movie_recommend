@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/main-home/main-home",
+    "pages/main-category/main-category",
+    "pages/main-search/main-search",
+    "pages/main-profile/main-profile",
+    "pages/detail-search/detail-search",
+    "pages/detail-movie/detail-movie",
+    "pages/detail-menu/detail-menu",
+    "pages/movie-intro/movie-intro",
+    "pages/movie-comment/movie-comment",
+    "pages/detail-collect/detail-collect",
+    "pages/测试页面/test",
+    "pages/detail-comment/detail-comment",
+    "pages/system-login/system-login",
+    "pages/system-register/system-register",
+    "pages/sys-detail/sys-detail",
+    "pages/sys-update/sys-update",
+    "pages/sys-insert/sys-insert"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "影视推荐",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main-home/main-home",
+        "text": "首页",
+        "iconPath": "assets/images/tabbar/home_normal.png",
+        "selectedIconPath": "assets/images/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/main-category/main-category",
+        "text": "分类",
+        "iconPath": "assets/images/tabbar/category_normal.png",
+        "selectedIconPath": "assets/images/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/main-search/main-search",
+        "text": "搜索",
+        "iconPath": "assets/images/tabbar/search_normal.png",
+        "selectedIconPath": "assets/images/tabbar/search_active.png"
+      },
+      {
+        "pagePath": "pages/main-profile/main-profile",
+        "text": "我的",
+        "iconPath": "assets/images/tabbar/profile_normal.png",
+        "selectedIconPath": "assets/images/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

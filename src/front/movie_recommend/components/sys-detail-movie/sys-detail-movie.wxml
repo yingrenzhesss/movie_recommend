@@ -1,0 +1,29 @@
+<!--components/sys-detail-movie/sys-detail-user.wxml-->
+<view>
+	<van-search value="{{ value }}"shape="round"background="#fafafa"placeholder="请输入搜索关键词"use-action-slot
+		bind:change="onChange"
+		bind:search="onSearch"
+		bind:clear="onClear"
+	>
+		<view slot="action" bind:tap="onClick">搜索</view>
+	</van-search>
+	<view class="movie-item">
+		<block wx:for="{{ movieInfo }}" wx:key="index">
+			<view class="container">
+				<view class="title">电影: {{ item.title }}</view>
+				<view class="score">评分: {{ item.score }}</view>
+				<view class="director">导演: {{ item.director }}</view>
+				<view class="actors">主演: {{ item.actors }}</view>
+				<view class="movie-type">类型: {{ item.movieType }}</view>
+				<view class="operation">
+					<button class="operation-button" size="mini" type="warn" plain bindtap="onUpdateTap"
+						data-movie="{{ item }}" data-movie_id="{{ item.movie_id }}" data-movie_name="{{ item.title }}"
+					>修改</button>
+					<button class="operation-button" size="mini" type="warn" plain bindtap="onDelectTap"
+						data-movie_id="{{ item.movie_id }}" data-movie_name="{{ item.title }}"
+					>删除</button>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

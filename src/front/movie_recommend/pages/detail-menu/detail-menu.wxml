@@ -1,0 +1,9 @@
+<!--pages/detail-menu/detail-menu.wxml-->
+<scroll-view class="list" scroll-y enable-flex>
+	<block wx:for="{{ menuMovies }}" wx:key="movie_id">
+		<view class="item">
+			<menu-item title="{{ type }}" itemData="{{ item }}"></menu-item>
+		</view>
+	</block>
+</scroll-view>
+

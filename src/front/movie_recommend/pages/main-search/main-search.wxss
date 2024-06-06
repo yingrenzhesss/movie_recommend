@@ -1,0 +1,32 @@
+/* pages/main-search/main-search.wxss */
+page {
+	--search-background-color: #fff;
+	--search-padding: 10px 0; /* 消除搜索框默认内边距，是页面保持一致*/
+
+	box-sizing: border-box;
+	padding: 0 24rpx;
+	background-color: #fafafa;
+	/* 找到变量名改样式 */
+}
+.search-button {
+	border: 2rpx solid yellow;
+}
+
+.van-search__content {
+  border: 1px solid #999; /* 设置边框样式 */
+  border-radius: 4px; /* 设置边框圆角 */
+}
+
+
+page {
+	box-sizing: border-box;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10rpx;
+	margin-bottom: 40rpx;
+}
+.list .item {
+	width: 100%;	
+}

@@ -1,0 +1,13 @@
+<!--components/menu-item/menu-item.wxml-->
+<view class="menu-item" bindtap="onMenuItemTap"> 
+	<view class="top"> 
+		<view class="image-container">
+			<image class="image" src="{{ itemData.cover_url }}" />
+		</view>
+		<view class="score" wx:if="{{title !== '即将上映'}}">{{ itemData.score }}</view>
+		<view class="score" wx:else>{{ itemData.release_date }}</view>
+	</view>
+	<view class="bottom">
+		{{ itemData.actors }}
+	</view>
+</view>

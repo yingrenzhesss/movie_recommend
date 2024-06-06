@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="login">
+    <view class="title">欢迎登录</view>
+    <view class="login-name">
+      <image class="image" src="/assets/images/icons/system.png" />
+      <view class="name-input">
+        <input type="text" bindinput="onUsernameInput" placeholder="请输入用户名"/>
+      </view>
+    </view>
+    <view class="login-password">
+      <image class="image" src="/assets/images/icons/password.png" mode=""/>
+      <view class="password-input">
+        <input type="password" bindinput="onPasswordInput" placeholder="请输入密码"/>
+      </view>
+    </view>
+		<view class="operation">
+			<button  bindtap="onLogin">登录</button>
+			<button  bindtap="onRegisterTap">注册?</button>
+		</view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+.comment-item {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.operation {
+  margin-left: 80%;
+  margin-top: 10rpx;
+}
+/* .operation {
+  display: flex;
+  margin-left: 70%;
+  margin-top: 10rpx;
+}
+.operation-button {
+  flex: 1; 
+  margin-right: 10rpx;
+}
+.small {
+  font-size: 28rpx; 
+  padding: 4rpx 8rpx; 
+} */

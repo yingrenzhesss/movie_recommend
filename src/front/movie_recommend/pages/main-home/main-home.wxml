@@ -1,0 +1,57 @@
+<!--pages/main-home/main-home.wxml-->
+<!-- 1.vant搜索框 -->
+<van-search
+  value="{{ searchValue }}"
+  shape="round"
+  background="#fafafa"
+  placeholder="请输入搜索关键词"
+	bind:click-input="onSearchClick"
+/>
+
+<!--2.轮播图的展示  -->
+<view>
+	<swiper 
+	class="banner"
+	circular indicator-dots autoplay
+	wx:if="{{ banners.length }}"
+	>
+		<block wx:for="{{ banners }}" wx:key="index">
+			<swiper-item class="item" bindtap="onBannersTap" data-movie_id="{{ item.movie_id }}" data-movie_name="{{ item.movie_name }}">
+				<image 
+					class="banner-image" 
+					src="{{ item.movie_img }}" 
+					mode="widthFix"
+				/>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<!-- 3.推荐电影 -->
+<view class="recommend">
+	<area-header title="推荐电影" bind:moreClick="onRecommendMoreClick"></area-header>
+	<view class="list">
+		<block wx:for="{{ recommendMoviesInfo }}" wx:key="movie_id">
+			<movie-item-v1 movieType="为你推荐" itemData="{{ item }}"></movie-item-v1>
+		</block>
+	</view>
+</view>
+
+<!-- 4.正在热映 -->
+<menu-area title="正在热映" menuList="{{ hotMovies }}"></menu-area>
+
+<!-- 5.即将上映 -->
+<menu-area title="即将上映" menuList="{{ laterMovies }}"></menu-area>
+
+<!-- 6.为你推荐 -->
+<view class="exclusive_push" wx:if="{{ pushMovies.length }}">
+	<area-header title="为你推荐" hasMore="{{ false }}"></area-header>
+	<scroll-view class="push_list" scroll-y enable-flex>
+		<block wx:for="{{ pushMovies }}" wx:key="movie_id">
+			<view class="push_item">
+				<menu-item itemData="{{ item }}"></menu-item>
+			</view>
+		</block>
+	</scroll-view>
+</view>
+

@@ -1,0 +1,40 @@
+.movie-item {
+	padding: 20rpx;
+}
+.container {
+  position: relative;
+  padding: 20rpx;
+  border: 4rpx solid rgb(78, 77, 77);
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+	flex-direction: column;
+	font-size: 32rpx;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.score {
+	margin-bottom: 20rpx;
+}
+
+.director {
+	margin-bottom: 20rpx;
+}
+.actors {
+	margin-bottom: 20rpx;
+	overflow: hidden;
+}
+.movie-type {
+	margin-bottom: 20rpx;
+}
+.operation {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 40rpx;
+	justify-content: center;
+	align-items: center;
+}

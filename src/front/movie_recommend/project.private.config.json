@@ -1,0 +1,78 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "movie_recommend",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的页面",
+          "pathName": "pages/main-profile/main-profile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "电影详情列表页",
+          "pathName": "pages/detail-movie/detail-movie",
+          "query": "type=recommend",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "更多区域电影",
+          "pathName": "pages/detail-menu/detail-menu",
+          "query": "type=%E6%AD%A3%E5%9C%A8%E7%83%AD%E6%98%A0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "电影介绍",
+          "pathName": "pages/movie-intro/movie-intro",
+          "query": "movie_id=36151692&movieType=%E6%AD%A3%E5%9C%A8%E7%83%AD%E6%98%A0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的页面2",
+          "pathName": "pages/main-profile/main-profile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/main-search/main-search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "分类页面",
+          "pathName": "pages/main-category/main-category",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "管理员登录页面",
+          "pathName": "pages/system-login/system-login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "管理员界面",
+          "pathName": "pages/sys-detail/sys-detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.19.6"
+}

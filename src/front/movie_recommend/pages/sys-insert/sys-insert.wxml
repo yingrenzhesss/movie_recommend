@@ -1,0 +1,32 @@
+<!--pages/sys-insert/sys-insert.wxml-->
+<view class="movie" wx:if="{{ type === 'banners' }}">
+  <van-cell-group>
+    <van-field
+      value="{{ value }}"
+      type="text"
+			placeholder="请输入电影id"
+      clearable
+      label="电影ID"
+      bind:change="onIdChange"
+    />
+    <van-field
+      value="{{ value }}"
+      type="text"
+			placeholder="请输入电影名字"
+      clearable
+      label="电影名字"
+      bind:change="onNameChange"
+    />
+    <van-field
+      value="{{ value }}"
+      type="text"
+			placeholder="请输入电影轮播图地址"
+      clearable
+      label="电影图片"
+      bind:change="onImgChange"
+    />
+  </van-cell-group>
+  <view class="operation">
+    <button class="section" type="primary" bindtap="onSubmit">提交内容</button>
+  </view>
+</view>

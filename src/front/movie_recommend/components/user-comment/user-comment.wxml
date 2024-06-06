@@ -1,0 +1,18 @@
+<!--components/user-comment/user-comment.wxml-->
+<view class="comment-item" bindtap="onCommentItemTap" >
+	<view class="title">电影名: {{ itemData.movie_name }}</view>
+	<view class="score">评分：
+		<van-rate 
+			value="{{ itemData.rating }}" 
+			size="{{ 20 }}"
+			color="#ffd21e"
+			void-icon="star"
+			void-color="#eee"
+		/>
+	</view>
+	<view class="content">内容：{{ itemData.content }}</view>
+	<view class="operation">
+		<!-- <button class="operation-button small"  type="warn" plain bindtap="onModifyTap">修改</button> -->
+		<button class="operation-button " size="mini" type="warn" plain bindtap="onDelectTap">删除</button>
+	</view>
+</view>

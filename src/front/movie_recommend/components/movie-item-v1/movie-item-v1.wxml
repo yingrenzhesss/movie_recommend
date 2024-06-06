@@ -1,0 +1,11 @@
+<!--components/movie-item-v1/movie-item-v1.wxml-->
+<view class="movie-item" bindtap="onMovieItemTap">
+	<image class="image" src="{{ itemData.cover_url }}" />
+	<view class="content">
+		<view class="name">{{ itemData.title }}</view>
+		<view class="brief">{{ itemData.brief }}</view>
+	</view>
+	<view class="arrow">
+		<van-icon name="arrow" />
+	</view>
+</view>

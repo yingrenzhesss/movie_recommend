@@ -1,0 +1,13 @@
+/* pages/detail-collect/detail-collect.wxss */
+page {
+	box-sizing: border-box;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10rpx;
+	margin-bottom: 40rpx;
+}
+.list .item {
+	width: 100%;	
+}
