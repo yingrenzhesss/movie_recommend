@@ -1,6 +1,6 @@
 const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS } = require('../config/error')
 const userService = require('../service/user.service')
-const md5password = require('../utils/md5-password')
+const md5password = require('../utils/md5-crypto')
 
 const verifyUser = async (ctx, next) => {
   // 验证user是否能保存到数据库
@@ -25,7 +25,6 @@ const handlePassword = async (ctx, next) => {
 
   // 2.对密码进行加密
   ctx.request.body.password = md5password(password)
-
   // 3.执行下一个中间件
   await next()
 }
